@@ -3,8 +3,19 @@ getSumBtn.append("Get Total Price");
 document.body.appendChild(getSumBtn);
 
 const getSum = () => {
-//Add your code here
-  
+ let prices=document.querySelectorAll('.price')
+ let sumarr = Array.from(prices)
+sumarr=sumarr.map(Number)
+ let total =  sumarr.reduce((acc,sum)=>sum+acc,0)
+ const totalrow = document.createElement('tr');
+ const totalname = document.createElement("td");
+ const totalprice = document.createElement('td');
+totalname.textContent="total Price"
+totalprice.textContent=`${total}`
+totalrow.append(totalname,totalprice)
+totalrow.id="sum"
+document.querySelector("table").appendChild(totalrow);
+
 };
 
 getSumBtn.addEventListener("click", getSum);
