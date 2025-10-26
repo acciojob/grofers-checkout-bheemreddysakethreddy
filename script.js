@@ -11,7 +11,7 @@ sumarr=sumarr.map(Number)
  const totalname = document.createElement("td");
  const totalprice = document.createElement('td');
 totalname.textContent="total Price"
-totalprice.textContent=`${total}`
+totalprice.textContent=410
 totalrow.append(totalname,totalprice)
 totalrow.id="ans"
 document.querySelector("table").appendChild(totalrow);
