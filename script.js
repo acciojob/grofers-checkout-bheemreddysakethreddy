@@ -13,7 +13,7 @@ sumarr=sumarr.map(Number)
 totalname.textContent="total Price"
 totalprice.textContent=`${total}`
 totalrow.append(totalname,totalprice)
-totalrow.id="sum"
+totalrow.id="ans"
 document.querySelector("table").appendChild(totalrow);
 
 };
